@@ -75,6 +75,12 @@ $ git push origin main
 resposta do bash;
 
 intel i3@ALVESPC MINGW64 ~/Documents/DEV/Git/DIO/dio-desafio-github-repositorio1 (main)
+
+para enviar para o github presisa fazer um push com o camando abaixo;
+$ git push origin main
+
+logo apos ele resposta assim;
+
 $ git push origin main
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
