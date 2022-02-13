@@ -1,0 +1,95 @@
+Iremos aprender aqui a fazer um repositorio no git/github
+
+primeiro passo e logar na sua conta no guithub
+segundo criar um repositorio novo no ícone + ao lado do ìcone do sininho, clica em novo repositorio
+em seguida nomeia-o faz a descriçao do projeto, configura para acesso público ou privado, anexa um readme se julgar necessario
+e clica na caixa de diálogo criar repositorio.
+para envialo para o git no destop;
+na tela inicial vc verá o resitorio recem criado
+clica na caixa de dialogo código(cor verde)
+seleciona a opçaõ HTTPS CLICA EM COPIAR LINK
+abra o git bash em uma pasta escolhida
+no git bash digite o comando git clone (link do repositorio)
+apos isso vc vera a seguite informaçao;
+ git clone https://github.com/Rogerio-777/dio-desafio-github-repositorio1.git
+Cloning into 'dio-desafio-github-repositorio1'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+acima descreve que sua pasta foi baixada para o pc
+
+ainda no git bash entre com o comando cd  cd '/c/Users/intel i3/Documents/DEV/Git/DIO/dio-desafio-github(diretorio da pasta que eu criei)
+ao fazer isso o bash informara
+
+intel i3@ALVESPC MINGW64 ~/Documents/DEV/Git/DIO/dio-desafio-github-repositorio1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+voce vai visualizar na sua pasta do pc que foi criado o seu diretorio
+basta vc dar um comando no git bash ; git status e ele dara o estatus do seu diretorio
+
+quando houver mudanças no diretorio feito por vc, podera ver dando o mesmo comando ai ele vai retornar com a mudança
+comando; git status
+intel i3@ALVESPC MINGW64 ~/Documents/DEV/Git/DIO/dio-desafio-github-repositorio1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        "anota\303\247oes.txt.txt"
+para enviar para o guithub vc fará o seguinte;
+
+comando
+$ git add .
+
+resposta;
+intel i3@ALVESPC MINGW64 ~/Documents/DEV/Git/DIO/dio-desafio-github-repositorio1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   "anota\303\247oes.txt.txt" vai estar verde
+
+outro comando;
+git commit -m "descreva o diretorio de uma forma logica"
+
+vc vai criar um  commite para envialo;
+
+intel i3@ALVESPC MINGW64 ~/Documents/DEV/Git/DIO/dio-desafio-github-repositorio1 (main)
+$ git commit -m "inclusão da pasta anotações do curso git/github"
+[main bee5bac] inclusão da pasta anotações do curso git/github
+ 1 file changed, 1 insertion(+)
+ create mode 100644 "anota\303\247oes.txt.txt"
+
+depois outro comando;
+
+intel i3@ALVESPC MINGW64 ~/Documents/DEV/Git/DIO/dio-desafio-github-repositorio1 (main)
+$ git push origin main
+
+resposta do bash;
+
+intel i3@ALVESPC MINGW64 ~/Documents/DEV/Git/DIO/dio-desafio-github-repositorio1 (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 324 bytes | 108.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Rogerio-777/dio-desafio-github-repositorio1.git
+   8bcc850..bee5bac  main -> main
+
+se for a primeira vez que vc usar o bash o github vai solicitar que vc coçoque sua senha para ele completar a tarefa
+apos isso vc dá um F5 e atualiza a sua pagina do github e verá a alteração feita pelo desktop.
+
+
+
+
+
+
